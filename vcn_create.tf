@@ -13,3 +13,10 @@ resource "oci_core_virtual_network" "simple-vcn" {
   compartment_id = "ocid1.compartment.oc1..aaaaaaaaa7vg63dona4ujp4urknt6bgps7fqnb3dlrwv5ygbcexcqodawerq"
   display_name   = "simple-vcn"
 }
+
+terraform {
+backend "http" {
+update_method="PUT"
+address = "https://objectstorage.ap-mumbai-1.oraclecloud.com/p/exx820b1GC9ab8PvrAEijrmHsE-l9TrunMG-_nOJdMes/n/bml7jwcbgcqp/b/terraform_bucket/o/terraform.tfstate"
+}
+}
