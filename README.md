@@ -1,4 +1,5 @@
-# terraform_basic
+<img src="icon.png" align="right" />
+# Terraform_basic Using OCI provider
 ### How to Create API SSL Key?
 API SSL Key
 You will need an SSL key pair to enable Terraform to connect to the OCI API under your identity. Start by generating a key
